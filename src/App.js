@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import HomePage from './pages/home/home';
-import './App.scss';
-import { Switch, Route } from 'react-router-dom';
+import HomePage from "./pages/home/home";
+import Shop from "./pages/shop/shop";
+import { Switch, Route } from "react-router-dom";
+
+import "./App.scss";
 
 const HatsPage = () => <div>HATS</div>;
 
@@ -10,8 +12,8 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route path='/hats' component={HatsPage} />
+        <Route exact path="/" component={HomePage} />
+        <Route path="/shop" component={Shop} />
       </Switch>
     </div>
   );
